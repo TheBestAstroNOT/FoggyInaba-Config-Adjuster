@@ -35,57 +35,42 @@ public partial class MainWindowViewModel : ObservableObject
     };
 
     public NavigationViewItem[] MenuItems { get; } =
-    [
+    [/*
         new NavigationViewItem()
         {
             Content = Resources.Home,
             Icon = new SymbolIcon { Symbol = SymbolRegular.Home16 },
             TargetPageType = typeof(Views.Pages.Categories.Category_Main),
             ToolTip = Resources.Home
-        },
+        },*/
         new NavigationViewItem()
         {
-            Content = "2D",
+            Content = "Textures",
             Icon = new SymbolIcon { Symbol = SymbolRegular.PaintBrush16 },
-            TargetPageType = typeof(Views.Pages.Categories.Category_2D),
-            ToolTip = "2D"
+            TargetPageType = typeof(Views.Pages.Categories.Category_Textures),
+            ToolTip = "Textures"
         },
         new NavigationViewItem()
         {
-            Content = "3D",
+            Content = "Inaba",
+            Icon = new SymbolIcon { Symbol = SymbolRegular.BuildingTownhouse20 },
+            TargetPageType = typeof(Views.Pages.Categories.Category_ENVINABA),
+            ToolTip = "ENV - Inaba",
+
+        },
+        new NavigationViewItem()
+        {
+            Content = "TV Wor..",
+            Icon = new SymbolIcon { Symbol = SymbolRegular.Tv16 },
+			TargetPageType = typeof(Views.Pages.Categories.Category_ENVTV),
+            ToolTip = "ENV - TV World"
+        },
+        new NavigationViewItem()
+        {
+            Content = "Field..",
             Icon = new SymbolIcon { Symbol = SymbolRegular.Cube16 },
-            TargetPageType = typeof(Views.Pages.Categories.Category_3D),
-            ToolTip = "3D"
-        },
-        new NavigationViewItem()
-        {
-            Content = Resources.Audio,
-            Icon = new SymbolIcon { Symbol = SymbolRegular.Speaker216 },
-			TargetPageType = typeof(Views.Pages.Categories.Category_Audio),
-            ToolTip = Resources.Audio
-        },
-        new NavigationViewItem()
-		{
-            Content = Resources.Theo,
-            Icon = new SymbolIcon { Symbol = SymbolRegular.PlayingCards20 },
-			TargetPageType = typeof(Views.Pages.Categories.Category_Theo),
-            ToolTip = Resources.Theo
-        },
-        new NavigationViewItem()
-        {
-            Content = string.IsNullOrEmpty(Resources.Misc)
-            ? Resources.ResourceManager.GetString("Misc", System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty
-            : Resources.Misc,
-            Icon = new SymbolIcon { Symbol = SymbolRegular.Library16 },
-            TargetPageType = typeof(Views.Pages.Categories.Category_Misc),
-            ToolTip = Resources.Misc
-        },
-        new NavigationViewItem()
-        {
-            Content = Resources.UI,
-            Icon = new SymbolIcon { Symbol = SymbolRegular.Color16},
-            TargetPageType = typeof(UiPage),
-            ToolTip = Resources.UI
-        },
+            TargetPageType = typeof(Views.Pages.Categories.Category_Field),
+            ToolTip = "Field Imports and Models"
+        }
     ];
 }

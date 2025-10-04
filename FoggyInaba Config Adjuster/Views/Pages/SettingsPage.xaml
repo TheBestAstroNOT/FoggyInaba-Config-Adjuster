@@ -41,7 +41,8 @@
             Content="{x:Static resx:Resources.Dark}"
             GroupName="themeSelect"
             IsChecked="{Binding ViewModel.CurrentTheme, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Dark, Mode=OneWay}" />
-
+        
+        <!--Disabled Localisation Setup
         <TextBlock
         Margin="0,24,0,0"
         FontSize="20"
@@ -53,7 +54,8 @@
           SelectedItem="{Binding ViewModel.SelectedLanguage, Mode=TwoWay}"
           HorizontalAlignment="Left"
           />
-
+        -->
+        
         <TextBlock
         Margin="0,24,0,0"
         FontSize="20"

@@ -12,9 +12,9 @@ public class CutinSection : ISection
     public string Description { get; } = Localisation.LocalisationResources.Resources.CutinDesc;
 
     /// <summary>
-    /// Section category, such as 2D, 3D, Audio, etc.
+    /// Section category, such as 2D, 3D, ENVTV, etc.
     /// </summary>
-    public SectionCategory Category { get; } = SectionCategory.TwoD;
+    public SectionCategory Category { get; } = SectionCategory.Textures;
 
     /// <summary>
     /// Contains all the options that appear in the section.

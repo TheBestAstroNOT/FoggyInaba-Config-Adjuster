@@ -8,7 +8,7 @@ public class KyotoPhotoSection : ISection
 
     public string Description { get; } = Localisation.LocalisationResources.Resources.KyotoPhotoDesc;
 
-    public SectionCategory Category { get; } = SectionCategory.TwoD;
+    public SectionCategory Category { get; } = SectionCategory.Textures;
 
     public ModOption[] Options { get; }
 

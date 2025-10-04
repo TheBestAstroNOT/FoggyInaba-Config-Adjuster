@@ -7,7 +7,7 @@ public class DayOutMusic_1 : ISection
 
     public string Description { get; } = Localisation.LocalisationResources.Resources.DayOutMusic1Desc;
 
-    public SectionCategory Category { get; } = SectionCategory.Audio;
+    public SectionCategory Category { get; } = SectionCategory.ENVTV;
 
     public ModOption[] Options { get; }
 

@@ -7,7 +7,7 @@ public class FinalMusic : ISection
 
     public string Description { get; } = Localisation.LocalisationResources.Resources.FinalDesc;
 
-    public SectionCategory Category { get; } = SectionCategory.Audio;
+    public SectionCategory Category { get; } = SectionCategory.ENVTV;
 
     public ModOption[] Options { get; }
 

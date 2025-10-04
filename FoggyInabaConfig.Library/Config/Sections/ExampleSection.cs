@@ -12,7 +12,7 @@ public class ExampleSection : ISection
     public string Description { get; } = "Example description.";
 
     /// <summary>
-    /// Section category, such as 2D, 3D, Audio, etc.
+    /// Section category, such as 2D, 3D, ENVTV, etc.
     /// </summary>
     public SectionCategory Category { get; } = SectionCategory.Example;
 

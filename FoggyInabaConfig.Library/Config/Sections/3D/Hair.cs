@@ -8,7 +8,7 @@ public class Hair : ISection
 
     public string Description { get; } = Localisation.LocalisationResources.Resources.HairDesc;
 
-    public SectionCategory Category { get; } = SectionCategory.ThreeD;
+    public SectionCategory Category { get; } = SectionCategory.ENVINABA;
 
     public ModOption[] Options { get; }
 

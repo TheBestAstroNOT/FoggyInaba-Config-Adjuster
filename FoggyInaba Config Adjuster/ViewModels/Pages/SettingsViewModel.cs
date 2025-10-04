@@ -12,6 +12,8 @@ namespace FoggyInaba_Config_Adjuster.ViewModels.Pages;
 
 public partial class SettingsViewModel : ObservableObject, INavigationAware
 {
+    /*
+    - DISABLED LOCALISATION OPTIONS
     public Dictionary<string, string> AvailableLanguages { get; } = new()
     {
         { "English", "en-US" },
@@ -21,6 +23,7 @@ public partial class SettingsViewModel : ObservableObject, INavigationAware
         { "Русский (Russian)", "ru" },
         { "简体中文 (Simplified Chinese)", "zh-CN" },
     };
+    */
 
     private bool _isInitialized = false;
 
@@ -45,6 +48,8 @@ public partial class SettingsViewModel : ObservableObject, INavigationAware
     {
         //AppVersion should always match the latest version of the FeMC mod.
         AppVersion = Constants.FOGGYINABA_MOD_VER + " - This should match the version of the P4 Fog Restoration mod you have installed on your system.";
+        /*
+         * Disabled Culture Setup
         string savedCulture = Properties.Settings.Default.SelectedLanguage;
         if (!string.IsNullOrEmpty(savedCulture))
         {
@@ -55,11 +60,14 @@ public partial class SettingsViewModel : ObservableObject, INavigationAware
         SelectedLanguage = AvailableLanguages.FirstOrDefault(x => x.Value == Thread.CurrentThread.CurrentUICulture.Name).Key
                              ?? "English";
         OnPropertyChanged(nameof(SelectedLanguage));
+        */
         CurrentTheme = ApplicationThemeManager.GetAppTheme();
         _isInitialized = true;
 
     }
 
+    /*
+     * Disabled Localisation Setup
     partial void OnSelectedLanguageChanged(string value)
     {
         if (!_isInitialized || string.IsNullOrEmpty(value))
@@ -87,6 +95,7 @@ public partial class SettingsViewModel : ObservableObject, INavigationAware
         Process.Start(Process.GetCurrentProcess().MainModule.FileName);
         App.Current.Shutdown();
     }
+    */
 
     [RelayCommand]
     private void OnChangeTheme(string parameter)

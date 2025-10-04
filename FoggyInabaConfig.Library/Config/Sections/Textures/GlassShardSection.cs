@@ -8,7 +8,7 @@ public class GlassShardSection : ISection
 
     public string Description { get; } = Localisation.LocalisationResources.Resources.GlassShardDesc;
 
-    public SectionCategory Category { get; } = SectionCategory.TwoD;
+    public SectionCategory Category { get; } = SectionCategory.Textures;
 
     public ModOption[] Options { get; }
 

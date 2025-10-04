@@ -17,7 +17,7 @@ namespace FoggyInabaConfig.Library.Config.Sections.Misc
             ? Localisation.LocalisationResources.Resources.ResourceManager.GetString("AnimationsDesc", System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty
             : Localisation.LocalisationResources.Resources.AnimationsDesc;
 
-        public SectionCategory Category { get; } = SectionCategory.Misc;
+        public SectionCategory Category { get; } = SectionCategory.Field;
 
         public ModOption[] Options { get; }
 

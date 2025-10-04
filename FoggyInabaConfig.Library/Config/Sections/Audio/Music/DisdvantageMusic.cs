@@ -16,9 +16,9 @@ public class DisadvantageMusicSection : ISection
     : Localisation.LocalisationResources.Resources.DisadvantageDesc;
 
     /// <summary>
-    /// Section category, such as 2D, 3D, Audio, etc.
+    /// Section category, such as 2D, 3D, ENVTV, etc.
     /// </summary>
-    public SectionCategory Category { get; } = SectionCategory.Audio;
+    public SectionCategory Category { get; } = SectionCategory.ENVTV;
 
     /// <summary>
     /// Contains all the options that appear in the section.

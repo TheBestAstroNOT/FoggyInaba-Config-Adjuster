@@ -8,7 +8,7 @@ public class AOATextSection : ISection
 
     public string Description { get; } = Localisation.LocalisationResources.Resources.AOATextDesc;
 
-    public SectionCategory Category { get; } = SectionCategory.TwoD;
+    public SectionCategory Category { get; } = SectionCategory.Textures;
 
     public ModOption[] Options { get; }
 

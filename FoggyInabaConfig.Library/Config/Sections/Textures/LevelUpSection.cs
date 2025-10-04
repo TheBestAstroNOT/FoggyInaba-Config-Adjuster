@@ -8,7 +8,7 @@ public class LevelUpSection : ISection
 
     public string Description { get; } = Localisation.LocalisationResources.Resources.LevelUpDesc;
 
-    public SectionCategory Category { get; } = SectionCategory.TwoD;
+    public SectionCategory Category { get; } = SectionCategory.Textures;
 
     public ModOption[] Options { get; }
 

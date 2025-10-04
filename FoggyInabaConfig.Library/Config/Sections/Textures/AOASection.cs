@@ -8,7 +8,7 @@ public class AOASection : ISection
 
     public string Description { get; } = Localisation.LocalisationResources.Resources.AOADesc;
 
-    public SectionCategory Category { get; } = SectionCategory.TwoD;
+    public SectionCategory Category { get; } = SectionCategory.Textures;
 
     public ModOption[] Options { get; }
 

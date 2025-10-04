@@ -8,7 +8,7 @@ public class PartyPanelSection : ISection
 
     public string Description { get; } = Localisation.LocalisationResources.Resources.PartyPanelDesc;
 
-    public SectionCategory Category { get; } = SectionCategory.TwoD;
+    public SectionCategory Category { get; } = SectionCategory.Textures;
 
     public ModOption[] Options { get; }
 

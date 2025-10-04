@@ -3,12 +3,9 @@
 public enum SectionCategory
 {
     Example,
-    MainPage,
-    TwoD,
-    ThreeD,
-    Audio,
-    Theo,
-    UI,
-    Misc,
+    Textures,
+    ENVINABA,
+    ENVTV,
+    Field,
     Disabled /*Dummy category so i can disable a section*/,
 };

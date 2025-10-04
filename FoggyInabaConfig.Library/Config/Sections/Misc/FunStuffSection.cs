@@ -17,7 +17,7 @@ namespace FoggyInabaConfig.Library.Config.Sections.Misc
             ? Localisation.LocalisationResources.Resources.ResourceManager.GetString("FunStuffDesc", System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty
             : Localisation.LocalisationResources.Resources.FunStuffDesc;
 
-        public SectionCategory Category { get; } = SectionCategory.Misc;
+        public SectionCategory Category { get; } = SectionCategory.Field;
 
         public ModOption[] Options { get; }
 

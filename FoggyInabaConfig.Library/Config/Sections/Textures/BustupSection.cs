@@ -7,7 +7,7 @@ public class BustupSection : ISection
     public string Name { get; } = Localisation.LocalisationResources.Resources.Bustup;
     public string Description { get; } = Localisation.LocalisationResources.Resources.BustupDesc;
 
-    public SectionCategory Category { get; } = SectionCategory.TwoD;
+    public SectionCategory Category { get; } = SectionCategory.Textures;
 
     public ModOption[] Options { get; }
 

@@ -7,7 +7,7 @@ public class Voice : ISection
 
     public string Description { get; } = Localisation.LocalisationResources.Resources.VoiceDesc;
 
-    public SectionCategory Category { get; } = SectionCategory.Audio;
+    public SectionCategory Category { get; } = SectionCategory.ENVTV;
 
     public ModOption[] Options { get; }
 
@@ -19,7 +19,7 @@ public class Voice : ISection
             new ModOption(ctx)
             {
                 InternalName = "audio_giowni_gender",
-                Name = "Giowni's Gendered Audio",
+                Name = "Giowni's Gendered ENVTV",
                 Authors = [Author.Femc],
                 // When option is enabled set the bool setting to true.
                 Enable = (ctx) => ctx.FemcConfig.Settings.Bluehairandpronounce = true,

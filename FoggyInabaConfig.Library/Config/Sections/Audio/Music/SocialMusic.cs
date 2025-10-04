@@ -7,7 +7,7 @@ public class SocialMusic : ISection
 
     public string Description { get; } = Localisation.LocalisationResources.Resources.SocialDesc;
 
-    public SectionCategory Category { get; } = SectionCategory.Audio;
+    public SectionCategory Category { get; } = SectionCategory.ENVTV;
 
     public ModOption[] Options { get; }
 
