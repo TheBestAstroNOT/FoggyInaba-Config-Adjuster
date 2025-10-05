@@ -15,7 +15,7 @@ public class ModOption : ObservableObject
         this.ctx = ctx;
 
         // Update IsEnabled state when mod config changes.
-        this.ctx.FemcConfig.Settings.PropertyChanged += (sender, args) =>
+        this.ctx.FoggyInabaConfig.Settings.PropertyChanged += (sender, args) =>
         {
             OnPropertyChanged(nameof(IsEnabled));
         };

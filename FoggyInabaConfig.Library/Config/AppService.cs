@@ -112,7 +112,7 @@ public class AppService
             ReloadedDir = reloadedDir,
             ModDir = foggyInabaDir,
             ReloadedAppConfig = appConfig,
-            FemcConfig = Directory.Exists(foggyInabaDir) ? new(foggyInabaConfigFile) : null,
+            FoggyInabaConfig = Directory.Exists(foggyInabaDir) ? new(foggyInabaConfigFile) : null,
             FoggyInabaModVersion = foggyInabaModVersionStatus,
         };
     }

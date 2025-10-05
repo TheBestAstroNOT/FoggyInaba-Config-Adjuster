@@ -21,7 +21,7 @@ namespace FoggyInaba_Config_Adjuster.ViewModels.Pages;
 
 public partial class UiPageViewModel : ObservableObject
 {
-    private readonly SavableFile<FemcModConfig> config;
+    private readonly SavableFile<FoggyInabaModConfig> config;
     private readonly Dictionary<string, ConfigColor> defaults = [];
     private readonly Subject<string> searchChanges = new();
     private readonly ObservableCollection<UiOption> options = new();
@@ -34,7 +34,7 @@ public partial class UiPageViewModel : ObservableObject
 
     public UiPageViewModel(AppService app)
     {
-        this.config = app.GetContext().FemcConfig;
+        this.config = app.GetContext().FoggyInabaConfig;
 
         //this.Options =
         //[
@@ -48,7 +48,7 @@ public partial class UiPageViewModel : ObservableObject
         //    new(nameof(this.config.DateTimePanelBottomTextColor), this.config.DateTimePanelBottomTextColor),
         //];
 
-        var defaultConfig = new FemcModConfig();
+        var defaultConfig = new FoggyInabaModConfig();
         this.colorProperties = this.config.Settings.GetType()
             .GetProperties()
             .Where(x => x.PropertyType == typeof(ConfigColor))

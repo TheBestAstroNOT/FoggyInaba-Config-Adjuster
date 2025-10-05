@@ -1,4 +1,5 @@
-﻿using FoggyInabaConfig.Library.Config.Options;
+﻿/*
+using FoggyInabaConfig.Library.Config.Options;
 
 namespace FoggyInabaConfig.Library.Config.Sections;
 
@@ -43,11 +44,11 @@ public class ExampleSection : ISection
 
                 // What to do when option is enabled.
                 // Usually just setting a value in the ModConfig.
-                Enable = (ctx) => ctx.FemcConfig.Settings.AOATrue = Models.FemcModConfig.AOAType.Ely,
+                //Enable = (ctx) => ctx.FoggyInabaConfig.Settings.AOATrue = Models.FoggyInabaModConfig.AOAType.Ely,
 
                 // What determines if this option is enabled.
                 // For bools it's just getting the setting value. For enums, like above, it's the same line but == instead of =.
-                IsEnabledFunc = (ctx) => ctx.FemcConfig.Settings.AOATrue == Models.FemcModConfig.AOAType.Ely,
+                //IsEnabledFunc = (ctx) => ctx.FoggyInabaConfig.Settings.AOATrue == Models.FoggyInabaModConfig.AOAType.Ely,
             },
 
             // Example for a bool setting.
@@ -58,12 +59,13 @@ public class ExampleSection : ISection
                 Authors = [Author.Missing],
 
                 // When option is enabled set the bool setting to true.
-                Enable = (ctx) => ctx.FemcConfig.Settings.EnableBustup = true,
-                Disable = (ctx) => ctx.FemcConfig.Settings.EnableBustup = false,
+                //Enable = (ctx) => ctx.FoggyInabaConfig.Settings.EnableBustup = true,
+                //Disable = (ctx) => ctx.FoggyInabaConfig.Settings.EnableBustup = false,
 
                 // Simpler than enums, just get the current bool value.
-                IsEnabledFunc = (ctx) => ctx.FemcConfig.Settings.EnableBustup,
+                //IsEnabledFunc = (ctx) => ctx.FoggyInabaConfig.Settings.EnableBustup,
             },
         ];
     }
 }
+*/

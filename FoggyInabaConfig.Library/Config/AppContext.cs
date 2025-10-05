@@ -10,7 +10,7 @@ public class AppContext
 
     public required string ModDir { get; init; }
 
-    public required SavableFile<FemcModConfig> FemcConfig { get; init; }
+    public required SavableFile<FoggyInabaModConfig> FoggyInabaConfig { get; init; }
 
     public required string FoggyInabaModVersion { get; init; }
 
